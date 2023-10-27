@@ -1,0 +1,68 @@
+.web3wise__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.web3wise__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.web3wise__navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.web3wise__navbar-links_logo img {
+    width: 45px;
+    height: auto;
+}
+
+.web3wise__navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.web3wise__navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.web3wise__navbar-links_container p,
+.web3wise__navbar-sign p,
+.web3wise__navbar-menu_container p{
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0.8rem;
+    cursor: pointer;
+}
+
+.web3wise__navbar-sign button,
+.web3wise__navbar-menu_container button{
+padding: 0.7rem 1rem;
+color: var(--color-text);
+border: none;
+border-radius: 4px;
+font-weight: 400;
+font-size: 16px;
+background:  var(--color-blog);
+font-family: var(--font-family);
+line-height: 20px;
+outline: none;
+cursor: pointer;
+transition: 0.3s;
+}
+.web3wise__navbar-sign button:hover,
+.web3wise__navbar-menu_container button{
+opacity: 0.9;
+}
