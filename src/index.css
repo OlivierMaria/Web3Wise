@@ -3,7 +3,7 @@
 :root{
     --font-family: 'Poppins', sans-serif;
 
-    --gradient-text: linear-gradient(89.97deg, #474747 1.84%, #C9333A 102.67%);
+    --gradient-text: linear-gradient(89.97deg, #c8c8c8 1.84%, #671f23 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #474747 -13.86%, #C9333A 99.55%);
 
     --color-bg:rgb(6, 1, 4);

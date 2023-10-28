@@ -119,4 +119,5 @@ opacity: 0.9;
     .web3wise__navbar{
         padding: 2rem 4rem;
     }
+    .web3wise__navbar-menu_container{top: 20px;}
 }
