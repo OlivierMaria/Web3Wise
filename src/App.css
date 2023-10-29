@@ -32,7 +32,7 @@ a {
   /* https://angrytools.com/gradient/ */
   background: radial-gradient(
     circle at 3% 25%,
-    rgba(239, 239, 239, 0.037) 0%,
+    rgba(25, 42, 36, 0.421) 0%,
     rgba(6, 1, 4, 0.168) 100%
   );
 }
@@ -171,6 +171,9 @@ a {
             animation-timing-function: ease-out;
   }
 }
+
+
+
 
 
 /*===============

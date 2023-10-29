@@ -30,7 +30,7 @@ function Navbar() {
           </p>
         </div>
       </div>
-      <div className="web3wise__navbar-menu">
+      <div className="web3wise__navbar-menu ">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -62,10 +62,6 @@ function Navbar() {
               <p>
                 <a href="#">Actualités Web3</a>
               </p>
-              <div className="web3wise__navbar-menu_container-links-sign">
-                <p>Nous rejoindre</p>
-                <button type="button">Se connecter</button>
-              </div>
             </div>
           </div>
         )}

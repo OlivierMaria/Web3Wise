@@ -18,7 +18,7 @@
 .web3wise__header-content h1{
 font-family: var(--font-family);
 font-weight: 800;
-font-size: 45px;
+font-size: 60px;
 color: var(--color-text);
 line-height: 70px;
 }
@@ -26,7 +26,7 @@ line-height: 70px;
 .web3wise__header-content p{
     color: var(--color-subtext);
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 1.5rem;
     line-height: 27px;
 }

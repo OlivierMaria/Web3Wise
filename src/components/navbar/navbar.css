@@ -1,123 +1,119 @@
-.web3wise__navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*======================
+Table of contents
+========================
 
-    padding: 2rem 6rem;
+1. Navbar style
+2. Toggle
+3. MediaQuery
+*/
+
+/*===============
+1. Navbar style
+================*/
+.web3wise__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
 }
 
-.web3wise__navbar-links{
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.web3wise__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.web3wise__navbar-links_logo{
-    margin-right: 2rem;
+.web3wise__navbar-links_logo {
+  margin-right: 2rem;
 }
 
 .web3wise__navbar-links_logo img {
-    width: 45px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
-.web3wise__navbar-links_container{
-    display: flex;
-    flex-direction: row;
+.web3wise__navbar-links_container {
+  display: flex;
+  flex-direction: row;
 }
 
-.web3wise__navbar-sign{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.web3wise__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .web3wise__navbar-links_container p,
-.web3wise__navbar-sign p,
-.web3wise__navbar-menu_container p{
-    color: var(--color-text);
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
+.web3wise__navbar-menu_container p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
 
-    margin: 0.8rem;
-    cursor: pointer;
+  margin: 0.8rem;
+  cursor: pointer;
 }
 
-.web3wise__navbar-sign button,
-.web3wise__navbar-menu_container button{
-padding: 0.7rem 1rem;
-color: var(--color-text);
-border: none;
-border-radius: 4px;
-font-weight: 400;
-font-size: 16px;
-background:  var(--color-blog);
-font-family: var(--font-family);
-line-height: 20px;
-outline: none;
-cursor: pointer;
-transition: 0.3s;
-}
-.web3wise__navbar-sign button:hover,
-.web3wise__navbar-menu_container button{
-opacity: 0.9;
+/*===============
+2. Toggle
+================*/
+
+.web3wise__navbar-menu {
+  margin-left: 1rem;
+  position: relative;
+  display: none;
 }
 
-.web3wise__navbar-menu{
-    margin-left: 1rem;
-    position: relative;
-    display: none;
-}
-
-.web3wise__navbar-menu svg{
-    cursor: pointer;
+.web3wise__navbar-menu svg {
+  cursor: pointer;
 }
 
 .web3wise__navbar-menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: end;
-    background: var(--color-footer);
-    padding: 2rem;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 4px;
-    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 4px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
-.web3wise__navbar-menu_container p{
-    margin: 1rem 0;
+.web3wise__navbar-menu_container p {
+  margin: 1rem 0;
 }
 
-.web3wise__navbar-menu_container-links-sign{
+/*===============
+3. MediaQuery
+================*/
+@media screen and (max-width: 1050px) {
+  .web3wise__navbar-links_container {
     display: none;
+  }
+  .web3wise__navbar-menu {
+    display: flex;
+  }
 }
-
-@media screen and (max-width: 1050px){
-    .web3wise__navbar-links_container{
-        display: none;
-    }
-    .web3wise__navbar-menu{
-        display: flex;
-    }
+@media screen and (max-width: 700px) {
+  .web3wise__navbar {
+    padding: 2rem 4rem;
+  }
 }
-@media screen and (max-width: 700px){
-    .web3wise__navbar{
-        padding: 2rem 4rem;
-    }
-}
-@media screen and (max-width: 550px){
-    .web3wise__navbar{
-        padding: 2rem 4rem;
-    }
-    .web3wise__navbar-menu_container{top: 20px;}
+@media screen and (max-width: 550px) {
+  .web3wise__navbar {
+    padding: 2rem 4rem;
+  }
+  .web3wise__navbar-menu_container {
+    top: 20px;
+  }
 }
