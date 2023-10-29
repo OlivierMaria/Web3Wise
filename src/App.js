@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Header,
-  Footer,
-  Possibility,
-  Features,
-  Web3,
-  Blog,
-} from "./containers";
+import { Header, Footer, Possibility, What, Project, Blog } from "./containers";
 import { Navbar, Brand, CTA } from "./components";
 import "./App.css";
 
@@ -18,8 +11,8 @@ const App = () => {
         <Header />
       </div>
       <Brand />
-      <Web3 />
-      <Features />
+      <What />
+      <Project />
       <Possibility />
       <CTA />
       <Blog />
