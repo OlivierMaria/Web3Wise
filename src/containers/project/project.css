@@ -39,7 +39,7 @@
   .web3wise__project-heading p {
     font-size: 14px;
     font-family: var(--font-family);
-    color: var(--color-subtext);
+    color: var(--color-text);
     font-weight: 500;
     line-height: 30px;
     cursor: pointer;
