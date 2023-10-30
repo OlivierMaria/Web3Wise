@@ -2,8 +2,17 @@ import React from "react";
 import { Header, Footer, Technology, What, Project, Blog } from "./containers";
 import { Navbar, Brand } from "./components";
 import "./App.css";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const App = () => {
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <div className="App">
       <div className="gradient__bg">
@@ -11,6 +20,7 @@ const App = () => {
         <Header />
       </div>
       <Brand />
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <What />
       <Project />
       <Technology />

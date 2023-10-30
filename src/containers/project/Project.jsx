@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
 import { Feature } from "../../components/index.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Web3() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="web3wise__project section__margin">
+    <div className="web3wise__project section__margin" data-aos="fade-left">
       <div className="web3wise__project-feature">
         <Feature
           title=" Façonnant l'Avenir de l'Internet"

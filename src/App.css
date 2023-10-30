@@ -28,6 +28,21 @@ a {
   text-decoration: none;
 }
 
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--color-blog);
+    transform-origin: 0%;
+  }
+  
+
+
+
+
 .gradient__bg {
   /* https://angrytools.com/gradient/ */
   background: radial-gradient(

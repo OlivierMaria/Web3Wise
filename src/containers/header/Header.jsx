@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import People from "../../assets/people.png";
 import Web3 from "../../assets/web3.png";
+import { motion } from "framer-motion";
 
 function Header() {
   return (
@@ -25,9 +26,19 @@ function Header() {
           <p>1,000 personne s'interesse au sujet, tu en fait partie ?</p>
         </div>
       </div>
-      <div className="web3wise__header-image">
+      <motion.div
+        className="web3wise__header-image"
+        animate={{ rotate: [0, 360], opacity: 1, scale: 0.8 }}
+        transition={{
+          duration: 5,
+          delay: 0.2,
+          ease: [0.5, 0.71, 1, 1.5],
+        }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileHover={{ scale: 1 }}
+      >
         <img src={Web3} alt="" />
-      </div>
+      </motion.div>
     </div>
   );
 }

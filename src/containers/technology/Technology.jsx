@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./technology.css";
 import TechnologyImage from "../../assets/techno.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Technology() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="web3wise__technology section__padding">
+    <div className="web3wise__technology section__padding" data-aos="fade-left">
       <div className="web3wise__technology-image">
         <img src={TechnologyImage} alt="Technology" />
       </div>

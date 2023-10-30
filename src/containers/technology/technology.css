@@ -1,3 +1,7 @@
+/* *{
+    border: 1px solid red;
+} */
+
 .web3wise__technology{
     display: flex;
     flex-direction: row;
@@ -56,8 +60,10 @@
     
     .web3wise__technology-image img{
         width: 100%;
-        height: 100%;
+        height: auto;
         margin-bottom: 2.7rem;
+        justify-content: center;
+        margin-left: 2rem;
     }
     
     .web3wise__technology-content{

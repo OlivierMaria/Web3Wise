@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./what.css";
 import { Feature } from "../../components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const featuresData = [
   {
@@ -22,8 +24,11 @@ const featuresData = [
 ];
 
 function What() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="web3wise__what section__padding">
+    <div className="web3wise__what section__padding " data-aos="fade-right">
       <div className="web3wise__what-heading">
         <h2>La Révolution Digitale Qui Met le Pouvoir Entre Vos Mains</h2>
       </div>

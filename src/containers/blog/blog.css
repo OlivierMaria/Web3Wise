@@ -1,0 +1,32 @@
+.web3wise__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.web3wise__blog-heading{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.web3wise__blog-heading h3{
+    color: var(--color-text);
+    font-size: 34px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 45px;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.web3wise__blog-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px ){
+
+    .web3wise__blog-container{
+        flex-direction: column-reverse;
+    }
+}
