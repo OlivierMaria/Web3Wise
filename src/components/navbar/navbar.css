@@ -14,7 +14,6 @@ Table of contents
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 2rem 6rem;
 }
 
@@ -53,10 +52,17 @@ Table of contents
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
-
   margin: 0.8rem;
   cursor: pointer;
+  transition: 0.5s;
 }
+
+.web3wise__navbar-links_container p:hover,
+.web3wise__navbar-menu_container p:hover {
+  color: var(--color-blog);
+  scale: 0.9;
+}
+
 
 /*===============
 2. Toggle

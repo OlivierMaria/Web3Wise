@@ -19,9 +19,15 @@ Table of contents
   box-sizing: border-box;
 }
 
+html,body{
+  width:100%;
+  overflow-x:hidden;
+  }
+
 body {
   background: var(--color-bg);
 }
+
 
 a {
   color: unset;
@@ -31,14 +37,15 @@ a {
 
   .progress-bar {
     position: fixed;
-    top: 0;
+top: 0;
     left: 0;
     right: 0;
     height: 10px;
     background: var(--color-blog);
     transform-origin: 0%;
+    z-index: 999;
   }
-  
+
 
 
 
@@ -69,6 +76,27 @@ a {
 .section__margin {
   margin: 4rem 6rem;
 }
+.my-title-class {
+  font-family: var(--font-family);
+  /* Autres styles pour le titre */
+}
+
+.my-content-class {
+  /* Autres styles pour le contenu */
+}
+
+
+.my-custom-alert {
+  background: black;
+  color: var(--color-text);
+  /* Autres styles pour l'alerte personnalisée */
+}
+
+
+
+
+
+
 
 /*===============
 3. Animation

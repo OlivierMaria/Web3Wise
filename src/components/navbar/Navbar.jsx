@@ -17,16 +17,16 @@ function Navbar() {
             <a href="#">Accueil</a>
           </p>
           <p>
-            <a href="#">Le Web3, qu'est-ce que c'est ?</a>
+            <a href="#what">Le Web3, qu'est-ce que c'est ?</a>
           </p>
           <p>
-            <a href="#">Technologies Web3</a>
+            <a href="#project">Projets Web3</a>
           </p>
           <p>
-            <a href="#">Projets Web3</a>
+            <a href="#techno">Technologies Web3</a>
           </p>
           <p>
-            <a href="#">Actualités Web3</a>
+            <a href="#article">Actualités Web3</a>
           </p>
         </div>
       </div>
@@ -51,16 +51,16 @@ function Navbar() {
                 <a href="#">Accueil</a>
               </p>
               <p>
-                <a href="#">Le Web3, qu'est-ce que c'est ?</a>
+                <a href="#what">Le Web3, qu'est-ce que c'est ?</a>
               </p>
               <p>
-                <a href="#">Technologies Web3</a>
+                <a href="#project">Projets Web3</a>
               </p>
               <p>
-                <a href="#">Projets Web3</a>
+                <a href="#techno">Technologies Web3</a>
               </p>
               <p>
-                <a href="#">Actualités Web3</a>
+                <a href="#article">Actualités Web3</a>
               </p>
             </div>
           </div>

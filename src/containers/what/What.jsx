@@ -28,7 +28,11 @@ function What() {
     AOS.init();
   }, []);
   return (
-    <div className="web3wise__what section__padding " data-aos="fade-right">
+    <div
+      className="web3wise__what section__padding "
+      data-aos="fade-right"
+      id="what"
+    >
       <div className="web3wise__what-heading">
         <h2>La Révolution Digitale Qui Met le Pouvoir Entre Vos Mains</h2>
       </div>

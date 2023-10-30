@@ -18,12 +18,12 @@ function Header() {
         </p>
 
         <div className="web3wise__header-content__input">
-          <input type="email" placeholder="Votre email" />
-          <button type="button">Newsletter</button>
+          {/* <input type="email" placeholder="Votre email" />
+          <button type="button">Newsletter</button> */}
         </div>
         <div className="web3wise__header-content__people">
           <img src={People} alt="" />
-          <p>1,000 personne s'interesse au sujet, tu en fait partie ?</p>
+          <p>1,000 personnes s'interesse au sujet, tu en fait partie ?</p>
         </div>
       </div>
       <motion.div
@@ -35,7 +35,7 @@ function Header() {
           ease: [0.5, 0.71, 1, 1.5],
         }}
         initial={{ opacity: 0, scale: 0.5 }}
-        whileHover={{ scale: 1 }}
+        whileHover={{ scale: 0.7 }}
       >
         <img src={Web3} alt="" />
       </motion.div>

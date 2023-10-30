@@ -9,8 +9,8 @@ function Technology() {
     AOS.init();
   }, []);
   return (
-    <div className="web3wise__technology section__padding" data-aos="fade-left">
-      <div className="web3wise__technology-image">
+    <div className="web3wise__technology section__padding" id="techno">
+      <div data-aos="fade-left" className="web3wise__technology-image">
         <img src={TechnologyImage} alt="Technology" />
       </div>
       <div className="web3wise__technology-content">

@@ -9,7 +9,11 @@ function Web3() {
     AOS.init();
   }, []);
   return (
-    <div className="web3wise__project section__margin" data-aos="fade-left">
+    <div
+      className="web3wise__project section__margin"
+      id="project"
+      data-aos="fade-left"
+    >
       <div className="web3wise__project-feature">
         <Feature
           title=" Façonnant l'Avenir de l'Internet"

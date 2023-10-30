@@ -1,7 +1,7 @@
 import React from "react";
 import "./article.css";
 
-const Article = ({ imgUrl, title }) => {
+const Article = ({ imgUrl, title, links }) => {
   return (
     <div className="web3wise__blog-container_article">
       <div className="web3wise__blog-container_article-image">
@@ -11,7 +11,9 @@ const Article = ({ imgUrl, title }) => {
         <div>
           <h4>{title}</h4>
         </div>
-        <p>Voir l'article complet</p>
+        <a href={links} target="_blank" rel="noreferrer">
+          <p>Voir l'article complet</p>
+        </a>
       </div>
     </div>
   );
