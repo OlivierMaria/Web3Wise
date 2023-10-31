@@ -34,7 +34,7 @@ function Header() {
             <AiFillLinkedin className="web3wise__icons-custom" />
           </a>
           <a
-            href="https://www.linkedin.com/in/oliviermaria09/"
+            href="mailto:olivier-maria@hotmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
