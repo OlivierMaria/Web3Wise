@@ -22,7 +22,9 @@ function Web3() {
       </div>
       <div className="web3wise__project-heading">
         <h2>Projets Transcendants Qui Redéfinissent l'Internet</h2>
-        <p>Explorez davantage grâce à nos articles informatifs.</p>
+        <a href="#article">
+          <p>Explorez davantage grâce à nos articles informatifs.</p>
+        </a>
       </div>
       <div className="web3wise__project-container">
         <Feature

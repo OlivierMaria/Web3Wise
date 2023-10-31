@@ -1,62 +1,74 @@
-  
-  .web3wise__project{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+/*======================
+Table of contents
+========================
+
+1. General style projet
+2. MediaQuery
+*/
+
+/*===============
+1. General style projet
+================*/
+.web3wise__project {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
   /* https://angrytools.com/gradient/ */
   background: radial-gradient(
     circle at 3% 25%,
     rgba(25, 42, 36, 0.421) 0%,
     rgba(6, 1, 4, 0.168) 100%
   );
-  }
+}
 
-  .web3wise__project-feature{
-    display: flex;
-  }
+.web3wise__project-feature {
+  display: flex;
+}
 
-  .web3wise__project-feature .web3wise__project-container-text{
-    margin: 0;
-  }
+.web3wise__project-feature .web3wise__project-container-text {
+  margin: 0;
+}
 
-  .web3wise__project-heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 4rem 0 2rem;
-  }
+.web3wise__project-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
 
-  .web3wise__project-heading h2{
-      color: var(--color-text);
-    font-size: 34px;
-    font-family: var(--font-family);
-    font-weight: 800;
-    line-height: 45px;
-    max-width: 500px;
-  }
+.web3wise__project-heading h2 {
+  color: var(--color-text);
+  font-size: 34px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 45px;
+  max-width: 500px;
+}
 
-  .web3wise__project-heading p {
-    font-size: 14px;
-    font-family: var(--font-family);
-    color: var(--color-text);
-    font-weight: 500;
-    line-height: 30px;
-    cursor: pointer;
-  }
+.web3wise__project-heading p {
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 30px;
+  cursor: pointer;
+}
 
-  .web3wise__project-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2rem;
+.web3wise__project-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+/*===============
+2. MediaQuery
+================*/
+@media screen and (max-width: 600px) {
+  .web3wise__project-heading {
+    flex-direction: column;
   }
-
-  @media screen and (max-width: 600px){
-    .web3wise__project-heading {
-      flex-direction: column;
-    }
-    .web3wise__project-heading h2{
+  .web3wise__project-heading h2 {
     font-size: 25px;
     font-family: var(--font-family);
     font-weight: 800;
@@ -65,7 +77,7 @@
 
   .web3wise__project-heading p {
     font-size: 12px;
-margin-top: 1rem;
+    margin-top: 1rem;
     cursor: pointer;
   }
-  }
+}

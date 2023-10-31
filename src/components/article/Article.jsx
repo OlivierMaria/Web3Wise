@@ -5,7 +5,7 @@ const Article = ({ imgUrl, title, links }) => {
   return (
     <div className="web3wise__blog-container_article">
       <div className="web3wise__blog-container_article-image">
-        <img src={imgUrl} alt="" />
+        <img src={imgUrl} alt="articleimg" />
       </div>
       <div className="web3wise__blog-container_article-content">
         <div>

@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <div className="web3wise__navbar-links_container">
           <p>
-            <a href="#">Accueil</a>
+            <a href="#home">Accueil</a>
           </p>
           <p>
             <a href="#what">Le Web3, qu'est-ce que c'est ?</a>
@@ -48,7 +48,7 @@ function Navbar() {
           <div className="web3wise__navbar-menu_container bounce-in-top">
             <div className="web3wise_navbar-menu_container-links">
               <p>
-                <a href="#">Accueil</a>
+                <a href="#home">Accueil</a>
               </p>
               <p>
                 <a href="#what">Le Web3, qu'est-ce que c'est ?</a>

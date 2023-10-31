@@ -1,31 +1,48 @@
-.web3wise__brand{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 3rem;
+/*======================
+Table of contents
+========================
+
+1. Brand General
+2. Button
+3.Animation
+4. MediaQuery
+*/
+
+/*===============
+1. Brand General
+================*/
+
+.web3wise__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
+/*===============
+2. Button
+================*/
 .ui-btn {
   box-sizing: border-box;
-  padding:  15px 20px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-text);
-font-family: var(--font-family);
-font-size: 13px;
-font-weight: 400;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 400;
   background: #1a201e;
   border: none;
-  transition: .3s;
+  transition: 0.3s;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.137);
   border-radius: 1px;
 }
 
 .ui-btn span {
-  letter-spacing: .1rem;
-  transition: .3s;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
   box-sizing: border-box;
   position: relative;
   background: inherit;
@@ -38,18 +55,24 @@ font-weight: 400;
   background: inherit;
 }
 
-.ui-btn:hover, .ui-btn:focus {
+.ui-btn:hover,
+.ui-btn:focus {
   background: rgba(30, 29, 29, 0.63);
 }
 
-.ui-btn:hover span, .ui-btn:focus span {
+.ui-btn:hover span,
+.ui-btn:focus span {
   color: var(--color-blog);
 }
 
-.ui-btn:hover span::before, .ui-btn:focus span::before {
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
   animation: chitchat linear both 1.2s;
 }
 
+/*===============
+3. Animation
+================*/
 @keyframes chitchat {
   0% {
     content: "#";
@@ -76,11 +99,7 @@ font-weight: 400;
   }
 
   30% {
-    content: "#{+.";
-  }
-
-  35% {
-    content: "@}-?";
+    content: "#{+.";}35%{content: "@}-?";
   }
 
   40% {
@@ -144,10 +163,12 @@ font-weight: 400;
     right: 0;
   }
 }
-  
+/*===============
+4. MediaQuery
+================*/
 
-@media screen and (max-width: 650px){
-  .web3wise__brand{
+@media screen and (max-width: 650px) {
+  .web3wise__brand {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

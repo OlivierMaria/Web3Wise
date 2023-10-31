@@ -1,34 +1,90 @@
-/* *{
-    border: 1px solid red;
-} */
+/*======================
+Table of contents
+========================
 
-.web3wise__technology{
-    display: flex;
-    flex-direction: row;
+1. General style technology
+2. MediaQuery
+*/
+
+/*===============
+1. General style technology
+================*/
+.web3wise__technology {
+  display: flex;
+  flex-direction: row;
 }
 
-.web3wise__technology-image{
+.web3wise__technology-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.web3wise__technology-image img {
+  width: 50%;
+  height: 100%;
+}
+
+.web3wise__technology-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.web3wise__technology-content h3 {
+  color: var(--color-text);
+  font-size: 34px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 45px;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+.web3wise__technology-content p {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-subtext);
+}
+
+/*===============
+2. MediaQuery
+================*/
+
+@media screen and (max-width: 600px) {
+  .web3wise__technology {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .web3wise__technology-image {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-right: 2rem;
-}
+  }
 
-.web3wise__technology-image img{
-    width: 50%;
-    height: 100%;
-}
+  .web3wise__technology-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.7rem;
+    justify-content: center;
+    margin-left: 2rem;
+  }
 
-.web3wise__technology-content{
+  .web3wise__technology-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-}
+  }
 
-.web3wise__technology-content h3{
+  .web3wise__technology-content h3 {
     color: var(--color-text);
     font-size: 34px;
     font-family: var(--font-family);
@@ -36,57 +92,11 @@
     line-height: 45px;
     max-width: 500px;
     margin-bottom: 2rem;
-}
-.web3wise__technology-content p{
+  }
+  .web3wise__technology-content p {
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 500;
     color: var(--color-subtext);
-}
-
-@media screen and (max-width: 600px){
-
-    .web3wise__technology{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .web3wise__technology-image{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .web3wise__technology-image img{
-        width: 100%;
-        height: auto;
-        margin-bottom: 2.7rem;
-        justify-content: center;
-        margin-left: 2rem;
-    }
-    
-    .web3wise__technology-content{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-    
-    .web3wise__technology-content h3{
-        color: var(--color-text);
-        font-size: 34px;
-        font-family: var(--font-family);
-        font-weight: 800;
-        line-height: 45px;
-        max-width: 500px;
-        margin-bottom: 2rem;
-    }
-    .web3wise__technology-content p{
-        font-family: var(--font-family);
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--color-subtext);
-    }
   }
+}

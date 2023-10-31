@@ -1,55 +1,65 @@
-/* *{
-    border: 1px solid red;
-} */
+/*======================
+Table of contents
+========================
 
-.web3wise__what{
+1. General style Le web3 c'est quoi ?
+2. MediaQuery
+*/
+
+/*===============
+1. General style Le web3 c'est quoi ?
+================*/
+.web3wise__what {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.web3wise__what-heading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 5rem;
+}
+.web3wise__what-heading h2 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+/*===============
+2. MediaQuery
+================*/
+@media screen and (max-width: 600px) {
+  .web3wise__what {
     width: 100%;
     display: flex;
-    justify-content:space-between;
-}
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-.web3wise__what-heading{
+  .web3wise__what-heading {
     flex: 1;
     display: flex;
-justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 5rem;
-}
-.web3wise__what-heading h2{
-    color: var(--color-text);
-    font-family: var(--font-family);
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 800;
-}
-
-@media screen and (max-width: 600px){
-.web3wise__what{
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-}
-
-.web3wise__what-heading{
-    flex: 1;
-    display: flex;
-justify-content: center;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 1rem;
-}
-.web3wise__what-heading h2{
+  }
+  .web3wise__what-heading h2 {
     color: var(--color-text);
     font-family: var(--font-family);
     font-size: 30px;
     line-height: 40px;
     font-weight: 800;
-}
-.web3wise__what-heading p{
+  }
+  .web3wise__what-heading p {
     font-size: 12px;
     line-height: 20px;
-}
+  }
 }
